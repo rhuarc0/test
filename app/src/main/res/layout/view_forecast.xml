@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_half_default"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_weather_rv_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingStart="@dimen/spacing_default"
+        android:paddingEnd="@dimen/spacing_default"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_default"
+        android:visibility="gone"
+        />
+
+</android.support.v7.widget.CardView>
+

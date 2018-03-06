@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/spacing_default"
+    android:paddingBottom="@dimen/spacing_default"
+    >
+
+    <TextView
+        android:id="@+id/li_forecast_tv_date"
+        android:layout_width="0dp"
+        android:layout_weight="45"
+        android:layout_height="match_parent"
+
+        tools:text="Tomorrow" />
+
+    <TextView
+        android:id="@+id/li_forecast_tv_main_weather"
+        android:layout_width="0dp"
+        android:layout_weight="25"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        tools:text="Snow" />
+
+    <TextView
+        android:id="@+id/li_forecast_tv_temp_range"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="match_parent"
+
+        android:gravity="end"
+        tools:text="-10 / -5" />
+
+</LinearLayout>
+

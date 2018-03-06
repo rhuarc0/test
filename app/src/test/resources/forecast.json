@@ -1,0 +1,88 @@
+{
+  "cod": "200",
+  "message": 0.0032,
+  "cnt": 2,
+  "list": [
+    {
+      "dt": 1487365200,
+      "main": {
+        "temp": 275.459,
+        "temp_min": 271.459,
+        "temp_max": 276.459,
+        "pressure": 966.3,
+        "sea_level": 1040.8,
+        "grnd_level": 966.3,
+        "humidity": 96,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 88
+      },
+      "wind": {
+        "speed": 3.71,
+        "deg": 265.503
+      },
+      "rain": {
+        "3h": 1.16
+      },
+      "snow": {
+        "3h": 0.075
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2017-02-17 21:00:00"
+    },
+    {
+      "dt": 1487624400,
+      "main": {
+        "temp": 272.424,
+        "temp_min": 270.424,
+        "temp_max": 274.424,
+        "pressure": 968.38,
+        "sea_level": 1043.17,
+        "grnd_level": 968.38,
+        "humidity": 85,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02n"
+        }
+      ],
+      "clouds": {
+        "all": 20
+      },
+      "wind": {
+        "speed": 3.57,
+        "deg": 255.503
+      },
+      "rain": {},
+      "snow": {},
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2017-02-20 21:00:00"
+    }
+  ],
+  "city": {
+    "id": 6940463,
+    "name": "Altstadt",
+    "coord": {
+      "lat": 48.137,
+      "lon": 11.5752
+    },
+    "country": "none"
+  }
+}

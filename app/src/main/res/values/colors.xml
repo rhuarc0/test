@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001860</color>
+    <color name="colorPrimaryDark">#011240</color>
+    <color name="colorAccent">#D32F2F</color>
+
+    <color name="colorPrimaryText">#DE000000</color>
+    <color name="colorSecondaryText">#87000000</color>
+
+    <color name="colorSeparator">#24000000</color>
+    <color name="scroll_view_background_color">#EEEEEE</color>
+
+
+</resources>
