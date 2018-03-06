@@ -1,5 +1,6 @@
 package com.my.test.presentation.modules.addcity;
 
+import com.my.test.R;
 import com.my.test.domain.entities.City;
 import com.my.test.domain.interactors.CitiesInteractor;
 import com.my.test.domain.interactors.DefaultObserver;
@@ -61,7 +62,7 @@ public class AddCityPresenter extends BasePresenter<AddCityContract.View> implem
             protected void onUnknownError(Throwable throwable) {
                 super.onUnknownError(throwable);
                 cityList.clear();
-                view.showMessage("Something went wrong");
+                view.showMessage(R.string.unknown_error);
             }
         };
     }

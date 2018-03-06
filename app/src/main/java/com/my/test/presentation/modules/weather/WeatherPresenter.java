@@ -1,11 +1,13 @@
 package com.my.test.presentation.modules.weather;
 
+import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.util.Pair;
 
 import com.annimon.stream.OptionalInt;
 import com.annimon.stream.Stream;
+import com.my.test.R;
 import com.my.test.domain.entities.City;
 import com.my.test.domain.entities.CurrentWeather;
 import com.my.test.domain.entities.Forecast;
@@ -53,7 +55,7 @@ public class WeatherPresenter extends BasePresenter<WeatherContract.View> implem
             @Override
             public void onNext(Pair<CurrentWeather, Forecast> pair) {
                 if (pair.first.getCity() != null &&
-                        pair.first.getCity().getName().equals(""))
+                        TextUtils.isEmpty(pair.first.getCity().getName()))
                     view.showEmptyState();
                 else {
 
@@ -84,7 +86,7 @@ public class WeatherPresenter extends BasePresenter<WeatherContract.View> implem
             @Override
             public void onError(Throwable e) {
                 if (e instanceof UnknownHostException)
-                    view.showMessage("Can't connect to the server");
+                    view.showMessage(R.string.connection_error);
                 else
                     view.showMessage(e.getMessage());
             }

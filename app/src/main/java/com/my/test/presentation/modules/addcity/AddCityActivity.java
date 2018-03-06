@@ -8,6 +8,7 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -57,7 +58,7 @@ public class AddCityActivity extends MvpActivity
 
     @OnClick(R.id.act_find_city_btn_search)
     public void onButtonSearchClicked() {
-        if (!"".equals(svCity.getQuery().toString()))
+        if (!TextUtils.isEmpty(svCity.getQuery().toString()))
             presenter.findCities(svCity.getQuery().toString());
     }
 

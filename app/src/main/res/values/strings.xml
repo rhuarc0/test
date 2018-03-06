@@ -41,4 +41,6 @@
     <string name="no_cities">No cities found</string>
     <string name="delete_city_warning">Do you really want to delete the city?</string>
     <string name="delete_city">Delete city</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="connection_error">Can\'t connect to the server</string>
 </resources>
