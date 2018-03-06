@@ -51,9 +51,9 @@ public class CityDataSourceImpl implements CityDataSource {
     @Override
     public Completable deleteCity(City city) {
         return Completable.fromAction(() -> {
-            appDatabase.getCityDao().delete(city.getId());
             appDatabase.getWeatherDao().deleteWeatherByCityId(city.getId());
             appDatabase.getForecastDao().deleteForecastByCityId(city.getId());
+            appDatabase.getCityDao().delete(city.getId());
         });
     }
 }

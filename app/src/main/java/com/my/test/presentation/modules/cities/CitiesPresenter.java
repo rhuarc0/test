@@ -82,6 +82,9 @@ public class CitiesPresenter extends BasePresenter<CitiesContract.View> implemen
 
                     view.showCities(cityWithWeatherList);
 
-                });
+                },
+                        throwable -> {
+            view.showMessage(throwable.getMessage());
+        });
     }
 }
