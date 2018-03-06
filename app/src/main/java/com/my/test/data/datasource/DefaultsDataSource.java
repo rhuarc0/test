@@ -8,7 +8,7 @@ import android.content.SharedPreferences;
 public class DefaultsDataSource {
     private static final String CURRENT_CITY_INDEX = "current_city_index";
 
-    SharedPreferences sharedPreferences;
+    private SharedPreferences sharedPreferences;
 
     public DefaultsDataSource(SharedPreferences sharedPreferences) {
         this.sharedPreferences = sharedPreferences;

@@ -23,11 +23,11 @@ import io.reactivex.Observable;
  */
 public class RemoteDataSource implements WeatherDataSource {
 
-    DtoToCurrentWeatherMapper dtoToCurrentWeatherMapper;
-    DtoToForecastMapper dtoToForecastMapper;
+    private DtoToCurrentWeatherMapper dtoToCurrentWeatherMapper;
+    private DtoToForecastMapper dtoToForecastMapper;
 
-    Cache cache;
-    WebService webService;
+    private Cache cache;
+    private WebService webService;
 
     public RemoteDataSource(DtoToCurrentWeatherMapper dtoToCurrentWeatherMapper,
                             DtoToForecastMapper dtoToForecastMapper,
