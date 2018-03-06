@@ -26,10 +26,12 @@
         </activity>
         <activity
             android:name=".presentation.modules.cities.CitiesActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             />
         <activity
             android:name=".presentation.modules.addcity.AddCityActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize"
             />
