@@ -4,7 +4,7 @@ package com.my.test.domain.entities;
  *
  */
 public class City {
-    private Integer id;
+    private int id;
     private String name;
     private String country;
 
@@ -13,7 +13,7 @@ public class City {
     public class Builder {
         private Builder() {}
 
-        public Builder setId(Integer id) {
+        public Builder setId(int id) {
             City.this.id = id;
             return this;
         }
@@ -37,7 +37,7 @@ public class City {
         return new City().new Builder();
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 

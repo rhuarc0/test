@@ -70,7 +70,9 @@ public class AddCityPresenter extends BasePresenter<AddCityContract.View> implem
     @Override
     public void onCityClicked(int position) {
         citiesInteractor.addCity(cityList.get(position))
-                .subscribe(() -> view.finish());
+                .subscribe(
+                        () -> view.finish(),
+                        throwable -> view.showMessage(throwable.getMessage()));
     }
 
 }
