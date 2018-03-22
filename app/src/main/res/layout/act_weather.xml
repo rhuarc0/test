@@ -39,6 +39,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/no_cities"
                 android:layout_margin="@dimen/spacing_default"
+                android:visibility="gone"
                 />
 
         </LinearLayout>
