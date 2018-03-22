@@ -19,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -75,6 +76,9 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
     @BindView(R.id.cv_outdated)
     CardView cvOutdated;
 
+    @BindView(R.id.card_details)
+    CardView cvDetails;
+
     @BindView(R.id.detail_layout)
     ViewGroup vgDetail;
 
@@ -98,6 +102,11 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
 
     @BindView(R.id.act_weather_rv_forecast)
     RecyclerView rvForecast;
+
+    @BindView(R.id.act_weather_iv_no_cities)
+    ImageView ivNoCities;
+
+
 
     @Inject
     WeatherContract.Presenter presenter;
@@ -270,7 +279,9 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
         } else {
             tvPressure.setText("");
         }
+        cvDetails.setVisibility(View.VISIBLE);
         vgDetail.setVisibility(View.VISIBLE);
+        ivNoCities.setVisibility(View.GONE);
     }
 
     @Override
@@ -282,10 +293,10 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
 
     @Override
     public void showEmptyState() {
+        tvToolbarText.setText(getString(R.string.no_cities));
         tvCity.setText("");
-        tvToolbarTemperature.setText("");
+        tvToolbarTemperature.setText(getString(R.string.no_cities));
         tvMainWeather.setText("");
-        tvToolbarText.setText("");
 
         adapter.clearItems();
         tvHumidity.setText("");
@@ -294,7 +305,9 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
         tvCloudiness.setText("");
 
         rvForecast.setVisibility(View.GONE);
-        vgDetail.setVisibility(View.GONE);
+        cvDetails.setVisibility(View.GONE);
+        cvOutdated.setVisibility(View.GONE);
+        ivNoCities.setVisibility(View.VISIBLE);
     }
 
     @Override

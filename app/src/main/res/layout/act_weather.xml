@@ -25,11 +25,21 @@
             android:orientation="vertical"
             >
 
+
             <include layout="@layout/view_outdated" />
 
             <include layout="@layout/view_forecast" />
 
             <include layout="@layout/view_weather_details" />
+
+            <ImageView
+                android:id="@+id/act_weather_iv_no_cities"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/no_cities"
+                android:layout_margin="@dimen/spacing_default"
+                />
 
         </LinearLayout>
 
