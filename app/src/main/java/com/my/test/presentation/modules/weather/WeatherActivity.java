@@ -103,11 +103,6 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
     @BindView(R.id.act_weather_rv_forecast)
     RecyclerView rvForecast;
 
-    @BindView(R.id.act_weather_iv_no_cities)
-    ImageView ivNoCities;
-
-
-
     @Inject
     WeatherContract.Presenter presenter;
 
@@ -281,7 +276,6 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
         }
         cvDetails.setVisibility(View.VISIBLE);
         vgDetail.setVisibility(View.VISIBLE);
-        ivNoCities.setVisibility(View.GONE);
     }
 
     @Override
@@ -307,7 +301,6 @@ public class WeatherActivity extends MvpActivity implements WeatherContract.View
         rvForecast.setVisibility(View.GONE);
         cvDetails.setVisibility(View.GONE);
         cvOutdated.setVisibility(View.GONE);
-        ivNoCities.setVisibility(View.VISIBLE);
     }
 
     @Override

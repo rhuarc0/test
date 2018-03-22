@@ -49,7 +49,7 @@ public class WeatherPresenter extends BasePresenter<WeatherContract.View> implem
             @Override
             protected void onStart() {
                 super.onStart();
-                view.showEmptyState();
+//                view.showEmptyState();
             }
 
             @Override
